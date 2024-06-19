@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <style>
+            .button
+            {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #ffffff;
+        width: 1800px;
+        height: 900px;
+            }
+            .button1
+            {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #848484;
+        color:rgb(0, 0, 0);
+        width: 100px;
+        height: 50px;
+            }
+    </style>
+ 
+<body style="text-align: center;">
+    <h1> Билет 21, задача 3</h1>
+    <button id="btn1" class="button1">Alert!</button>
+    <button id="btn" class="button"></button>
+
+
+    <script type="text/javascript">
+        let count = 0;
+        let btn = document.getElementById("btn");
+        let disp = document.getElementById("display");
+         
+        btn.onclick = function () {
+                    count++;
+        disp.innerHTML = count;
+        }
+        btn1.onclick = function ()
+        {
+            alert(count);
+        }
+    </script>
+</body>
+</html>
